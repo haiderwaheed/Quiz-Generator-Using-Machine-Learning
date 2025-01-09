@@ -1,0 +1,9 @@
+1.) GEMINI API KEY - Insert your key in ".env" file
+
+2.) The following packages are needed:
+pip install dotenv
+pip install flask
+pip install fpdf
+pip install google.generativeai
+pip install pdfplumber
+pip install python-docx
