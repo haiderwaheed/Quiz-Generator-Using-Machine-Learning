@@ -44,6 +44,9 @@ def generate_questions_gemini(input_text, num_questions):
     prompt = f"""
     You are an AI assistant whos job it is to generate multiple choice questions as part of a quiz for the user based on the following text:
     '{input_text}'
+    If there are any unknown characters, or URLs, or incomprehensible sections in the text, ignore them. 
+    If too little information is provided in the text, you may extrapolate and ask questions generally related to the topic of the text. Do not extrapolate if
+    there is already sufficient content provided.
     Generate exactly {num_questions} questions from the text. Each question should have:
     - A clear question
     - Four answer options (labeled A, B, C, D)
@@ -58,7 +61,7 @@ def generate_questions_gemini(input_text, num_questions):
     Correct Answer: [correct option]
     """
     response = model.generate_content(prompt).text.strip()
-    print(response)
+    # print(response)
     return response
 
 # Generate TXT of generate quiz
