@@ -13,10 +13,12 @@ The Quiz Maker takes input in .PDF, .TXT, or .DOCX format such as notes, lecture
 
 ## :arrow_down_small: Installation
 
+Install `Quiz Maker` and run `app.py`
+
 To run tests, install the following packages:
 
 ```bash
-pip install dotenv
+pip install python-dotenv
 ```
 ```bash
 pip install flask
@@ -40,3 +42,14 @@ pip install python-docx
 Obtain a Google Gemini API key from https://ai.google.dev/
 
 To run this project, you will need to assign your  API key to the  `GEMINI_API_KEY` environment variable in `.env`
+
+
+## :camera: Screenshots
+
+1. Choose a file and enter number of questions.
+
+![Pic 1](https://raw.githubusercontent.com/haiderwaheed/Quiz-Generator-Using-Machine-Learning/refs/heads/main/Screenshots/Capture0.PNG)
+
+2. Select an answer - which will then be shown as correct or incorrect.
+
+![Pic 2](https://raw.githubusercontent.com/haiderwaheed/Quiz-Generator-Using-Machine-Learning/refs/heads/main/Screenshots/Capture1.PNG)
